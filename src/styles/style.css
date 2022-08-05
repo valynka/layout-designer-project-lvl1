@@ -14,12 +14,12 @@
 
 @font-face {
   font-family: "Open Sans";
-  src: url(../fonts/static/OpenSans/OpenSans-Medium.ttf);
+  src: url("../fonts/static/OpenSans/OpenSans-Medium.ttf");
 }
 
 @font-face {
   font-family: Neucha;
-  src: url(../fonts/Neucha-Regular.ttf);
+  src: url("../fonts/Neucha-Regular.ttf");
 }
 
 .main-color-text {
@@ -27,22 +27,23 @@
 }
 
 * {
-  padding: 0;
   margin: 0;
+
+  padding: 0;
 }
 
 body {
-  font: 400 16px/1.6em "Open Sans";
-
   color: var(--dark);
+
+  font: 400 16px/1.6em "Open Sans", sans-serif;
 }
 
 h1,
 h2,
 h3 {
-  font-family: Neucha;
-  line-height: 1.2em;
   font-weight: normal;
+  font-family: Neucha, sans-serif;
+  line-height: 1.2em;
 }
 
 h1 {
@@ -63,27 +64,29 @@ h3 {
   padding: 100px 0;
 }
 
-header,
-section {
+.background-pattern {
   position: relative;
+
   overflow: hidden;
 }
 
-header::before,
-section::before {
-  content: '';
+.background-pattern::before {
   position: absolute;
-  left: 0;
-  right: 0;
   top: 0;
+  right: 0;
   bottom: 0;
-  background: url('../img/background.png');
+  left: 0;
+
+  background: url("../img/background.png");
   background-repeat: no-repeat;
   background-size: cover;
+
   opacity: 0.1;
+
+  content: "";
 }
 
-header {  
+header {
   background-color: var(--light);
 }
 
@@ -99,16 +102,17 @@ header {
 .header-img {
   position: absolute;
   top: 55px;
-  right: -270px;  
+  right: -270px;
 
   height: 525px;
 }
 
 .header-text-container {
-  margin-top: 200px;
   display: flex;
-  justify-content: center;
   gap: 30px;
+  justify-content: center;
+
+  margin-top: 200px;
 }
 
 .header-text {
@@ -117,11 +121,16 @@ header {
 
 .header-link {
   display: inline-block;
-  padding: 12px 24px;
-  background: var(--main-color);
-  color: var(--white);
-  font-weight: 700;
-  text-decoration: none;
-  text-transform: uppercase;
+
   margin-top: 40px;
+
+  padding: 12px 24px;
+
+  color: var(--white);
+
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  background: var(--main-color);
 }
