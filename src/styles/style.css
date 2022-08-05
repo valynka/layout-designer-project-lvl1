@@ -154,3 +154,53 @@ header {
 
   filter: drop-shadow(0 16px 32px rgb(0 0 0 / 15%));
 }
+
+nav {
+  background: var(--main-dark);
+}
+
+.nav-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 30px;
+
+  padding-top: 200px;
+}
+
+.card,
+.nav-card {
+  box-sizing: border-box;
+  width: 350px;
+}
+
+.card {
+  color: var(--white);
+
+  font-size: 52px;
+}
+
+.nav-card {
+  display: block;
+
+  padding: 24px;
+
+  color: var(--dark);
+
+  text-decoration: none;
+
+  background: var(--white);
+}
+
+.nav-card-num {
+  margin-bottom: 40px;
+
+  color: var(--main-dark);
+
+  font-size: 64px;
+  font-family: Neucha, sans-serif;
+  line-height: 1;
+}
+
+.nav-card-text {
+  margin-top: 16px;
+}
