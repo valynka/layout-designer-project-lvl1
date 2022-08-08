@@ -5,6 +5,7 @@
   --transparent-white: #d7ccc0;
   --light: #f5f4f0;
   --main-color: #fe8a02;
+  --main-color-hover: #ea7600;
   --main-dark: #42413c;
   --dark: #2a2626;
   --transparent-dark: #908d8b;
@@ -135,6 +136,10 @@ header {
   background: var(--main-color);
 }
 
+.header-link:hover {
+  background: var(--main-color-hover);
+}
+
 .video-section {
   background: var(--white);
 }
@@ -191,6 +196,12 @@ nav {
   background: var(--white);
 }
 
+.nav-card:hover {
+  color: var(--white);
+
+  background: var(--main-color);
+}
+
 .nav-card-num {
   margin-bottom: 40px;
 
@@ -199,6 +210,18 @@ nav {
   font-size: 64px;
   font-family: Neucha, sans-serif;
   line-height: 1;
+}
+
+.nav-card:hover .nav-card-num {
+  color: var(--white);
+}
+
+.nav-card-h3 {
+  color: var(--main-color);
+}
+
+.nav-card:hover .nav-card-h3 {
+  color: var(--white);
 }
 
 .nav-card-text {
