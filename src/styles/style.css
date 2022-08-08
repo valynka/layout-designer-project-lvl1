@@ -397,7 +397,12 @@ nav {
 }
 
 .contact {
-  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  justify-content: space-around;
+
+  margin-top: 76px;
 
   font-size: 14px;
   text-align: center;
