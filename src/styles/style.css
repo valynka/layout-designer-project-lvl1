@@ -314,3 +314,95 @@ nav {
 .distortion-brown .desc {
   color: var(--white);
 }
+
+.subscribe {
+  display: flex;
+  gap: 13px;
+  align-items: center;
+  justify-content: space-between;
+
+  box-sizing: border-box;
+
+  padding: 40px 55px;
+
+  color: var(--white);
+
+  background: var(--dark);
+}
+
+.subscribe-text {
+  flex-shrink: 0;
+  width: 50%;
+
+  font-size: 34px;
+  font-family: Neucha, sans-serif;
+  line-height: 1.2em;
+}
+
+.subscribe-form {
+  width: 50%;
+}
+
+.flex-for-inputs {
+  display: flex;
+  margin-top: 10px;
+}
+
+.subscribe-form-label {
+  font-size: 18px;
+}
+
+.subscribe-form input[name="email"] {
+  box-sizing: border-box;
+  width: calc(100% - 70px);
+  height: 50px;
+
+  padding: 15px;
+
+  border: 1px solid #e3e3e3;
+}
+
+.subscribe-form-button {
+  width: 70px;
+  height: 50px;
+
+  background: var(--main-color);
+  border: none;
+
+  cursor: pointer;
+}
+
+.subscribe-form-button:hover {
+  background: var(--main-color-hover);
+}
+
+.subscribe-form-button::before {
+  display: block;
+  margin: auto;
+
+  width: 24px;
+  height: 24px;
+
+  background: url("../img/send.svg");
+
+  content: "";
+}
+
+.agreement {
+  font-size: 12px;
+}
+
+.agreement a {
+  color: var(--white);
+}
+
+.contact {
+  margin-top: 60px;
+
+  font-size: 14px;
+  text-align: center;
+}
+
+.contact a {
+  color: #007dc1;
+}
