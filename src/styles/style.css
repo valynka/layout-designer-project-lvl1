@@ -283,6 +283,10 @@ nav {
   width: 50%;
 }
 
+.desc-text p:first-child {
+  margin-bottom: 1em;
+}
+
 .distortion-brown .lead,
 .distortion-brown .desc {
   color: var(--white);
